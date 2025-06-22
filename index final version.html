@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!--I added a nav link so i could create a list to link my 3 pages-->
+   
+   
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+   
+<!--I dowloaded from google renamed them and saved
+so i could shorten the tag name-->
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+
+
+   <h1>Carolina Panthers</h1>
+<p>My favorite players on the Panthers</p>
+<ol>
+    <li>Julius Peppers</li>
+    <img width="200" src="j.pep.jpg" alt="peppers">
+     <li>Steve Smith</li>
+     <img width="200" src="steve.smith.jpg.webp" alt="agent89">
+    <li>Cam Newton</li>
+    <img width="200" src="cam.newton.jpg" alt="cam superman">
+    <li>Luke Kuechly</li>
+    <img width="200" src="luke.k.jpg.webp" alt="pic of luke">  
+</ol>
+
+<!--I also changed the size of images by adding width to the img tag-->
+<!-- Code injec
